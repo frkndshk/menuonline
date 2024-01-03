@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿import React from 'react';
 import MenuList from './MenuList';
 
@@ -69,3 +70,6 @@ const MenuApp = () => {
 };
 
 export default MenuApp;
+=======
+
+>>>>>>> 4e1863dcf4c18a56111d003be2436ab6e76e6587

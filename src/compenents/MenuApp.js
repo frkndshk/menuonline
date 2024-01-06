@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ﻿import React from 'react';
 import MenuList from './MenuList';
 
@@ -23,15 +23,15 @@ const menuItems = [
     },
     {
         name: 'Margherita Pizza',
-        description: 'Classic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basil',
+        description: 'Classic tomato and mozzarella pizza with basil Classic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basilClassic tomato and mozzarella pizza with basil',
         price: 10.99,
-        image: 'margherita.jpg',
+        image: 'https://cdn.yemek.com/uploads/2023/10/saray-koftesi-yemekcom.jpg',
     },
     {
         name: 'Margherita Pizza',
         description: 'Classic tomato and mozzarella pizza with basil',
         price: 10.99,
-        image: 'margherita.jpg',
+        image: 'https://i.nefisyemektarifleri.com/2023/01/17/geleneksel-turk-yemekleri-medari-iftiharimiz.jpg',
     },
     {
         name: 'Margherita Pizza',
@@ -70,6 +70,3 @@ const MenuApp = () => {
 };
 
 export default MenuApp;
-=======
-
->>>>>>> 4e1863dcf4c18a56111d003be2436ab6e76e6587

@@ -1,5 +1,7 @@
 // MenuItem.js
 import React, { useState } from 'react';
+import './styles.css'; // CSS dosyanýzý içe aktarýn
+import OpenDetails from './OpenDetails';
 
 const MenuItem = ({ item }) => {
     const [showDetails, setShowDetails] = useState(false);
@@ -8,26 +10,21 @@ const MenuItem = ({ item }) => {
         setShowDetails(!showDetails);
     };
 
-    const shortenedDescription = item.description.length > 50 ? `${item.description.slice(0, 50)}...` : item.description;
+    const shortenedDescription = item.description.length > 30 ? `${item.description.slice(0, 30)}...` : item.description;
 
     return (
-        <div className="menu-item">
+        <div className={`menu-item ${showDetails ? 'expanded' : ''}`}>
             <img src={item.image} alt={item.name} />
             <div className="item-details">
                 <h3>{item.name}</h3>
-                <p>{showDetails ? item.description : shortenedDescription}</p>
-                {item.description.length > 50 && (
+                <p className="item-p" >{showDetails ? item.description : shortenedDescription}</p>
+                {item.description.length > 30 && (
                     <button onClick={toggleDetails}>{showDetails ? 'Kýsalt' : 'Detaylar'}</button>
                 )}
                 <p>Price: ${item.price}</p>
 
                 {showDetails && (
-                    <div className="modal">
-                        <div className="modal-content">
-                            <p>{item.description}</p>
-                            <button onClick={toggleDetails}>Kapat</button>
-                        </div>
-                    </div>
+                    <OpenDetails show={toggleDetails} item={item} />
                 )}
             </div>
         </div>
